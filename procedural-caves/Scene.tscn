@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/TileSet.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/background.png" type="Texture" id=2]
+
+[node name="Scene" type="Node2D"]
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 0.472534, -13.8591 )
+scale = Vector2( 0.328698, 0.391038 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 1920, 1080 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+format = 1
+tile_data = PoolIntArray( 6684731, 0, 0, 6684732, 0, 1, 6684733, 0, 1, 6684734, 0, 1, 6684735, 0, 2, 6750266, 0, 0, 6750267, 0, 131078, 6750268, 0, 65537, 6750269, 0, 65537, 6750270, 0, 65537, 6750271, 0, 65538, 6815800, 0, 0, 6815801, 0, 1, 6815802, 0, 131078, 6815803, 0, 65537, 6815804, 0, 65537, 6815805, 0, 65537, 6815806, 0, 65537, 6815807, 0, 131077, 6815808, 0, 1, 6815809, 0, 2, 6881336, 0, 131072, 6881337, 0, 65542, 6881338, 0, 65537, 6881339, 0, 65537, 6881340, 0, 65537, 6881341, 0, 65537, 6881342, 0, 65537, 6881343, 0, 65537, 6881344, 0, 65537, 6881345, 0, 65538, 6946873, 0, 131072, 6946874, 0, 65542, 6946875, 0, 65537, 6946876, 0, 65537, 6946877, 0, 65537, 6946878, 0, 65537, 6946879, 0, 65537, 6946880, 0, 65537, 6946881, 0, 65538, 7012410, 0, 131072, 7012411, 0, 65542, 7012412, 0, 65537, 7012413, 0, 65537, 7012414, 0, 65537, 7012415, 0, 65537, 7012416, 0, 65541, 7012417, 0, 196613, 7012418, 0, 196610, 7077947, 0, 131072, 7077948, 0, 131073, 7077949, 0, 131073, 7077950, 0, 131073, 7077951, 0, 131073, 7077952, 0, 131074 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Camera2D"]
+remote_path = NodePath("../../Background")
