@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://wall_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://background_tileset.tres" type="TileSet" id=2]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://InputControl.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scene.gd" type="Script" id=5]
+[ext_resource path="res://ControllerConnectionPopup.tscn" type="PackedScene" id=6]
 
 [node name="Scene" type="Node2D"]
+script = ExtResource( 5 )
 
 [node name="Background" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
@@ -30,3 +34,16 @@ current = true
 
 [node name="CameraTransform" type="RemoteTransform2D" parent="YSort/Player"]
 remote_path = NodePath("../../../Camera2D")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="InfoPopup" parent="CanvasLayer" instance=ExtResource( 6 )]
+
+[node name="RollInputControl" parent="CanvasLayer" instance=ExtResource( 4 )]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 30.3372
+margin_top = -28.2245
+margin_right = 30.3372
+margin_bottom = -28.2245
+action_name = "roll"
