@@ -40,12 +40,3 @@ const KEYBOARD_BUTTON_TO_INDEX_MAPPING = {
 	KEY_SPACE: 40,
 	KEY_ESCAPE: 41,
 }
-
-func get_current_icon_index(device_id:int,action_name:String):
-	for action in InputMap.get_action_list(action_name):
-		if action is InputEventKey and device_id == -1:
-			return KEYBOARD_BUTTON_TO_INDEX_MAPPING[action.scancode]
-		if action is InputEventJoypadButton and device_id != -1:
-			if "XInput" in Input.get_joy_name(device_id):
-				return XBOX_BUTTON_TO_INDEX_MAPPING[action.button_index]
-	return -1

@@ -1,4 +1,4 @@
-[![logo](thumbnail.png)](https://www.youtube.com/watch?v=lFIBn8kJ-IM)
+[![logo](thumbnail.jpg)](https://www.youtube.com/watch?v=lFIBn8kJ-IM)
 
 # Godot Tutorial: Procedural Cave Generation
 
