@@ -11,5 +11,5 @@ dest_files=[ "res://.import/disconnect.ogg-1aa1dd8803fa37c3f5153fa4c9b90ca7.oggs
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

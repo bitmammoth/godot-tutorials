@@ -1,4 +1,4 @@
-extends Node
+extends Control
 
 const XBOX_BUTTON_TO_INDEX_MAPPING = {
 	JOY_XBOX_A: 0,

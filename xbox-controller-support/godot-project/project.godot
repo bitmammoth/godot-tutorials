@@ -24,10 +24,6 @@ config/name="xbox-controller-support"
 run/main_scene="res://Scene.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-InputHelper="*res://InputIconHelper.gd"
-
 [display]
 
 window/size/width=240
