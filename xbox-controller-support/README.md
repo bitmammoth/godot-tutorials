@@ -1,4 +1,4 @@
-![thumbnail](thumbnail.jpg)
+[![thumbnail](thumbnail.jpg)](https://www.youtube.com/watch?v=Ox1kMM0qcTk)
 
 # Godot Tutorial: Xbox Controller Support
 
