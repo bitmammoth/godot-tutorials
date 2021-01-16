@@ -8,14 +8,9 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "VBoxContainer",
-"class": "InfoPopup",
-"language": "GDScript",
-"path": "res://ControllerConnectionPopup.gd"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"InfoPopup": ""
+
 }
 
 [application]
