@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://map/background/cloudySky_640x360px.png" type="Texture" id=1]
 [ext_resource path="res://map/groundTilemap_64px.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://map/background/par3_tileable_640x360px.png" type="Texture" id=4]
 [ext_resource path="res://map/background/par2_tileable_640x360px.png" type="Texture" id=5]
 [ext_resource path="res://player/Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://light/light.png" type="Texture" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -436,6 +437,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 [node name="2DLightingScene" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = -1
 offset = Vector2( 0, 50 )
 transform = Transform2D( 1, 0, 0, 1, 0, 50 )
 
@@ -465,7 +467,12 @@ motion_scale = Vector2( 0.2, 1 )
 motion_mirroring = Vector2( 1280, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/Foreground3"]
+position = Vector2( 0.629944, 0 )
 texture = ExtResource( 4 )
+
+[node name="ForegroundAmbient" type="CanvasModulate" parent="."]
+light_mask = -2147483648
+color = Color( 0.168627, 0.223529, 0.329412, 1 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 14 )
@@ -479,3 +486,9 @@ position = Vector2( 7.1272, 129.848 )
 position = Vector2( 0, -40 )
 current = true
 smoothing_enabled = true
+
+[node name="Light2D" type="Light2D" parent="Player"]
+position = Vector2( 0.813148, -10.3797 )
+scale = Vector2( 0.688693, 0.41086 )
+texture = ExtResource( 7 )
+color = Color( 0.909804, 0.678431, 0.588235, 1 )
