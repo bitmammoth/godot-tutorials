@@ -201,7 +201,6 @@ texture = ExtResource( 1 )
 flip_h = true
 vframes = 16
 hframes = 7
-frame = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/IdleLeft = SubResource( 2 )
@@ -216,3 +215,8 @@ active = true
 parameters/playback = SubResource( 19 )
 parameters/Idle/blend_position = Vector2( -1.00097, 0.00729918 )
 parameters/Run/blend_position = Vector2( 0, 0 )
+
+[node name="JumpTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+[connection signal="timeout" from="JumpTimer" to="." method="_on_JumpTimer_timeout"]
