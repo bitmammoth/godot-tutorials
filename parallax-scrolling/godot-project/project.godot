@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Godot Tutorial: 2D Lighting"
+config/name="Godot Tutorial: Parallax Scrolling"
 run/main_scene="res://2DLightingScene.tscn"
 config/icon="res://icon.png"
 
