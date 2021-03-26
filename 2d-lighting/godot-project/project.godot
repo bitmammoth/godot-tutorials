@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="xbox-controller-support"
+config/name="Tutorial: 2D Lighting"
 run/main_scene="res://Scene.tscn"
 config/icon="res://icon.png"
 
