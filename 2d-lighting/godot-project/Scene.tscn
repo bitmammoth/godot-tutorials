@@ -109,7 +109,7 @@ remote_path = NodePath("../../../Camera2D")
 position = Vector2( -0.563568, 5.22006 )
 scale = Vector2( 0.372171, 0.372171 )
 texture = ExtResource( 2 )
-color = Color( 0.972549, 0.854902, 0.831373, 1 )
+color = Color( 0.705882, 0.784314, 0.952941, 1 )
 shadow_color = Color( 1, 0.67451, 1, 0 )
 shadow_gradient_length = 5.0
 shadow_filter = 2
@@ -120,7 +120,7 @@ position = Vector2( 25.8529, 41.2946 )
 
 [node name="RotationBehavior" parent="YSort/Orb2" instance=ExtResource( 5 )]
 radius = 15.0
-speed = 10.0
+speed = 3.0
 
 [node name="Orb1" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 205.961, -1.76969 )
@@ -130,11 +130,13 @@ position = Vector2( 255.432, -161.822 )
 
 [node name="RotationBehavior" parent="YSort/Orb4" instance=ExtResource( 5 )]
 radius = 5.0
+speed = 3.0
 
 [node name="Orb5" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -132.963, -164.68 )
 
 [node name="RotationBehavior" parent="YSort/Orb5" instance=ExtResource( 5 )]
+speed = 2.0
 
 [node name="Orb6" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -130.715, 150.339 )
