@@ -1,20 +1,22 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/dungeon.png" type="Texture" id=1]
 [ext_resource path="res://assets/light.png" type="Texture" id=2]
+[ext_resource path="res://Orb.gd" type="Script" id=3]
 
-[sub_resource type="CanvasItemMaterial" id=2]
+[sub_resource type="CanvasItemMaterial" id=1]
 light_mode = 1
 
-[sub_resource type="AtlasTexture" id=1]
+[sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 1 )
 region = Rect2( 32, 16, 16, 16 )
 
 [node name="Orb" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-material = SubResource( 2 )
-texture = SubResource( 1 )
+material = SubResource( 1 )
+texture = SubResource( 2 )
 
 [node name="Light1" type="Light2D" parent="."]
 position = Vector2( -0.820454, -0.520168 )
