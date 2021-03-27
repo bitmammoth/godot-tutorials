@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/parallax-00.png-08739d5a601146b158c5683ec8a7d85a.stex"
+path="res://.import/parallax-03.png-75a54c1334fe0bbc68670da3afca6725.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://parallax/parallax-00.png"
-dest_files=[ "res://.import/parallax-00.png-08739d5a601146b158c5683ec8a7d85a.stex" ]
+source_file="res://parallax/parallax-03.png"
+dest_files=[ "res://.import/parallax-03.png-75a54c1334fe0bbc68670da3afca6725.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=1
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
