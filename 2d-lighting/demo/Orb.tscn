@@ -11,7 +11,7 @@ light_mode = 1
 atlas = ExtResource( 1 )
 region = Rect2( 32, 16, 16, 16 )
 
-[sub_resource type="CanvasItemMaterial" id=6]
+[sub_resource type="CanvasItemMaterial" id=3]
 light_mode = 1
 
 [sub_resource type="Curve" id=4]
@@ -20,7 +20,7 @@ _data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.161932, 1 ), 1.91598, 1.91
 [sub_resource type="CurveTexture" id=5]
 curve = SubResource( 4 )
 
-[sub_resource type="ParticlesMaterial" id=3]
+[sub_resource type="ParticlesMaterial" id=6]
 emission_shape = 1
 emission_sphere_radius = 3.0
 flag_disable_z = true
@@ -65,16 +65,16 @@ color = Color( 1, 0.321569, 0.466667, 1 )
 energy = 0.6
 
 [node name="AttachedParticles" type="Particles2D" parent="."]
-material = SubResource( 6 )
+material = SubResource( 3 )
 position = Vector2( -0.236233, -1.85051 )
 amount = 9
 lifetime = 1.5
-process_material = SubResource( 3 )
+process_material = SubResource( 6 )
 
 [node name="DetachedParticles" type="Particles2D" parent="."]
-material = SubResource( 6 )
+material = SubResource( 3 )
 position = Vector2( -0.236233, -1.85051 )
 amount = 4
 lifetime = 1.5
 local_coords = false
-process_material = SubResource( 3 )
+process_material = SubResource( 6 )
