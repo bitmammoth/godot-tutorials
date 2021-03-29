@@ -449,7 +449,7 @@ texture = ExtResource( 1 )
 motion_scale = Vector2( 0.1, 1 )
 motion_mirroring = Vector2( 1440, 0 )
 script = ExtResource( 8 )
-CLOUD_SPEED = 10.0
+CLOUD_SPEED = -15.0
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/CloudLayer"]
 texture = ExtResource( 3 )

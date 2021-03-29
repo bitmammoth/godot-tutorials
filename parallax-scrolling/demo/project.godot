@@ -32,7 +32,7 @@ window/size/test_width=1920
 window/size/test_height=1080
 window/dpi/allow_hidpi=true
 window/stretch/mode="viewport"
-window/stretch/aspect="keep_width"
+window/stretch/aspect="keep_height"
 
 [importer_defaults]
 

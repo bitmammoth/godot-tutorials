@@ -1,6 +1,6 @@
 extends ParallaxLayer
 
-export(float) var CLOUD_SPEED = 50.0
+export(float) var CLOUD_SPEED = -15
 
 func _process(delta):
-	$Sprite.position.x += CLOUD_SPEED * delta
+	motion_offset.x += CLOUD_SPEED * delta
