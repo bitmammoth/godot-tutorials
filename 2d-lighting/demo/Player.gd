@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
-export var ACCELERATION = 250
-export var FRICTION = 550
-export var MAX_SPEED = 50
-export var ROLL_SPEED = 80
+export var ACCELERATION = 350
+export var FRICTION = 850
+export var MAX_SPEED = 100
+export var ROLL_SPEED = 180
 
 enum {
 	RUN,
