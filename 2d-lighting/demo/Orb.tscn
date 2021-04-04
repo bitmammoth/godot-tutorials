@@ -58,7 +58,7 @@ shadow_filter = 2
 shadow_filter_smooth = 22.4
 
 [node name="Light2" type="Light2D" parent="."]
-position = Vector2( -0.0758057, -0.90844 )
+position = Vector2( -0.0758057, -1.5384 )
 scale = Vector2( 0.428781, 0.428781 )
 texture = ExtResource( 2 )
 color = Color( 1, 0.321569, 0.466667, 1 )
